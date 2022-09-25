@@ -88,12 +88,25 @@ function cardsSlider() {
     })
 }
 
+function ordersSlider() {
+    var swiper = new Swiper('.block2 .swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        // loop: true,
+        navigation: {
+            nextEl: '.block2 .swiper-button-next',
+            prevEl: '.block2 .swiper-button-prev',
+        },
+    })
+}
+
 
 bestSlider()
 saleSlider()
 hitsSlider()
 interesSlider()
 cardsSlider()
+ordersSlider()
 
 function addZero(num){
     return (num > 9) ? num : '0' + num;

@@ -303,7 +303,7 @@
 
 .order__face-block {
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .like__btn-svg {
@@ -518,7 +518,9 @@
   letter-spacing: -0.03em;
   color: #18191C;
 }
-
+*{
+  box-sizing: border-box;
+}
 .pay__btn {
   font-weight: 400;
   font-size: 14px;
@@ -531,6 +533,29 @@
   background: #375FED;
   border-radius: 25px;
   margin-left: auto;
+}
+
+.block2 .swiper-container{
+  overflow: hidden;
+  position: relative;
+}
+
+.lk__right{
+  max-width: 780px;
+}
+
+.lk-order__nav{
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+
+.lk-order__nav .swiper-btn{
+  box-sizing: border-box;
+  position: static;
+  margin: 0 0 0 20px;
 }
 
 .block1 {
