@@ -341,7 +341,7 @@
               <span class="price__descr">Цена</span>
               <span class="price-num">67.450</span>
             </div>
-            <button class="price__btn btn-reset specbtnall">Оформить</button>
+            <button class="price__btn btn-reset specbtnall" data-modal="orderSuccess">Оформить</button>
           </div>
         </div>
       </div>
@@ -674,6 +674,26 @@
       </div>
     </footer>
   </main>
+
+  <div class="modal" id="orderSuccess">
+    <div class="modal__dialog">
+      <div class="modal__dialog-inner">
+        <button class="modal__close">
+          <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.0938 1.63684C5.21875 1.63684 1.34375 5.51184 1.34375 10.3868C1.34375 15.2618 5.21875 19.1368 10.0938 19.1368C14.9688 19.1368 18.8438 15.2618 18.8438 10.3868C18.8438 5.51184 14.9688 1.63684 10.0938 1.63684ZM13.4688 14.7618L10.0938 11.3868L6.71875 14.7618L5.71875 13.7618L9.09375 10.3868L5.71875 7.01184L6.71875 6.01184L10.0938 9.38684L13.4688 6.01184L14.4688 7.01184L11.0938 10.3868L14.4688 13.7618L13.4688 14.7618Z" fill="#375FED"/>
+          </svg>
+        </button>
+        <img src="img/check.svg" alt="" class="modal__smile">
+        <div class="modal__title">
+          Спасибо за обращение! <br>
+          Мы скоро свяжемся с Вами.
+        </div>
+        <img src="img/1f60a.png" alt="" class="modal__smile modal__smile2">
+      </div>
+    </div>
+  </div>
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="js/dropmenu.js"></script>
   <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
@@ -681,6 +701,7 @@
   <script src="js/price.js"></script>
   <script src="js/checkbox.js"></script>
   <script src="js/buy.js"></script>
+  <script src="js/modal.js"></script>
 </body>
 
 </html>
