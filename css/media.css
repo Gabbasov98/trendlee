@@ -1614,11 +1614,16 @@
     margin-bottom: 10px;
   }
 
+  .lk-bonus__list .swiper-container{
+    height: 128px;
+  }
+
   .lk-bonus__list {
     margin-bottom: 20px;
   }
 
   .lk-bonus__item {
+    height: 36px;
     padding: 13px;
     border-radius: 18px;
   }

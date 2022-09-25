@@ -100,6 +100,26 @@ function ordersSlider() {
     })
 }
 
+function bonusSlider() {
+    var swiper = new Swiper('.lk-bonus__list .swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        // loop: true,
+        direction: 'vertical',
+        navigation: {
+            nextEl: '.block5 .swiper-button-next',
+        },
+        breakpoints: {
+            320: {
+                spaceBetween: 10
+            },
+            1200: {
+                spaceBetween: 20
+            },
+        }
+    })
+}
+
 
 bestSlider()
 saleSlider()
@@ -107,6 +127,7 @@ hitsSlider()
 interesSlider()
 cardsSlider()
 ordersSlider()
+bonusSlider()
 
 function addZero(num){
     return (num > 9) ? num : '0' + num;
