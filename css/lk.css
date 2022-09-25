@@ -615,7 +615,7 @@
 }
 
 .block1 {
-  display: none;
+  /*display: none;*/
 }
 
 .block2 {
@@ -631,7 +631,7 @@
 }
 
 .block5 {
-  /*display: none;*/
+  display: none;
 }
 
 .block6 {
